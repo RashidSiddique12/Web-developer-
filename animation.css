@@ -1,0 +1,25 @@
+#box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: absolute;
+    top: px;
+    animation: toggleColors 2000ms ease-in-out infinite;
+}
+@keyframes toggleColors {
+    0%{
+        background-color: red;
+        top: 0px;
+        
+
+    }
+    50%{
+        background-color: yellow;
+        top: 200px;
+    }
+    100%{
+        background-color: blue;
+        top: 0px;
+
+    }
+}

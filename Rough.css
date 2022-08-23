@@ -1,0 +1,54 @@
+html{
+    /* padding: 0;
+    margin: 0; */
+    margin: auto;
+    width: 50%; 
+
+
+}
+h1{
+    text-align: center;
+    background-color: rgb(228, 224, 219);
+}
+
+
+p{
+    background-color: rgb(91, 80, 80);
+    color: white;
+    line-height: 20px;
+    margin: 0px 20px;
+    padding: 0px 20px;
+    border-radius: 25px;
+    font-family: 'DynaPuff', cursive;
+}
+
+.main{
+    display: flex; 
+    margin: 20px;
+    text-align: center;
+}
+
+.box{
+    background-color: black;
+    padding-bottom: 10px;
+    color: white;
+    border: 2px solid black;
+    margin: 0px 5px;
+    border-radius: 10px;
+    
+}
+
+.box p{
+    background-color: white;
+    color: black;
+} 
+
+.demo h1{
+    color: red;
+}
+
+.demo p{
+    color: green;
+    background-color: white;
+    font-size:medium ;
+} 

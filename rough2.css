@@ -1,0 +1,17 @@
+.container{
+    background-color: aqua;
+    padding:  20px;
+    margin-bottom: 20px;
+}
+#circle{
+    background: red;
+    
+    margin: auto;
+    border: 10px double black;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    padding: 55px;
+    padding-bottom: 70px;
+
+}
