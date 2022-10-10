@@ -1,0 +1,50 @@
+.main{
+    /* display: flex; */
+    display:table-cell ;
+    vertical-align: middle;
+    /* position: relative; */
+    width: 100%;
+    height: 100%;
+   
+    /* justify-content: center;
+    text-align: center;
+    padding: auto auto; */
+    /* margin-top: 200px;
+     */
+     
+}
+
+#icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* display: inline-block; */
+    font: 44px;
+    animation: float 5s ease-in-out infinite;
+    background-color: white;
+    padding:15px;
+    margin: auto;
+    font-size: x-large;
+
+
+}
+#fa{
+    animation-delay: 1s;
+}
+#wh{
+    animation-delay: 2s;
+}
+@keyframes float {
+    0%{
+        transform: translate(0);
+    }  
+    50%{
+        transform: translate(-15px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+body{
+    background-color: pink;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <p>
+        this is first jquery example.
+    </p>
+    <p>this is the second line</p>
+    <p>this is the third line</p>
+    <p>this is the fourth line</p>
+    <p>this is the fifth line and if you click any paragraph then this paragraph will disappear</p>
+    <div class="lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero placeat vel eaque, laudantium iste dolores atque
+        ex praesentium nobis officiis eveniet fugiat recusandae animi excepturi nam ratione. Accusamus sed aliquid atque
+        architecto ducimus perferendis nam, quam commodi unde vero omnis magnam, dolor vitae voluptatibus voluptatum
+        reiciendis. Velit ea quam explicabo dignissimos labore ullam, ipsum provident?
+    </div>
+    <button id="but">toggling</button>
+    <!-- <button id="but2">Button2</button> -->
+
+</body>
+<script src="/jquery js/jquery-3.6.1.min.js"></script>
+<script>
+    // $('p').click(function(){
+    //     $(this).hide();
+    // });
+    // $('p').dblclick(function(){
+    //     console.log("double Click", this);
+    //     $(this).hide();
+    // });
+    // $('p').mouseenter(function () {
+    //     console.log("mouseentre click",  this);
+    //     $(this).hide();
+    //   });
+
+    //   $('p').hover(function(){
+    //     console.log("hover");
+    //     $(this).hide();
+    //   });
+
+    ////////////////////////////ON CLICK EVENT//////////////
+    $(document).ready(function () {
+        // $('p').on(
+        //     {
+        //         click: function () {
+        //             console.log("Thank for clicking the event")
+        //         },
+        //         mouseleave: function () {
+        //             console.log("leave the mouse event happend")
+
+        //         },
+        //         dblclick: function () {
+        //             console.log("double click on the event")
+        //         }
+        //     }
+        // )
+
+        // $('#but').click(function(){
+        //     console.log("toggling...")
+        //     // $('.lorem').toggle(1000)
+        //     // $('.lorem').fadeOut(5000)
+        //     // $('.lorem').fadeIn(1000)
+        //     // $('.lorem').fadeToggle(3000)
+        //     $('.lorem').fadeTo(5000)
+
+
+        // })
+        // $('#but2').click(function(){
+        //     console.log("toggling...")
+        //     // $('.lorem').toggle(1000)
+        //     // $('.lorem').fadeOut(5000)
+        //     $('.lorem').fadeIn(3000)
+
+
+        // })
+
+        ////////slide mehtod////
+    //     $('#but').click(function(){
+    //         console.log("toggling...")
+    //         $('.lorem').slideToggle(3000)
+    //         // $('.lorem').slideDown(3000)
+    //         // $('.lorem').slideUp(3000)
+    // });
+
+    ////////////////Animate//////
+    // $('.lorem').animate({
+    //     opacity: 0.2,
+    //     height: '400px',
+    //     width : '300px'
+    // }, 5000)
+
+    // $('.lorem').html('empty')
+    // $('.lorem').html()
+    // $('.lorem').empty()
+
+    $.get('https://code.jquery.com/jquery.com-3.3.1.js', function(data, status)
+    {
+        alert(data);
+    })
+        
+    });
+
+</script>
+
+</html>

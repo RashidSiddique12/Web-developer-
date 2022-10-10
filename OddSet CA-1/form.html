@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question 1</title>
+<style>
+/* .forms{
+padding: 0px;
+}
+.input{
+margin: 5px;
+padding: 0px;
+} */
+</style>
+</head>
+<body>
+<form class="forms">
+
+<div class = "input">First Name: <input type="text" name="fname" id="fname"></div>
+<br>
+<div class = "input">Last Name: <input type="text" name="lname" id="lname"></div>
+<br>
+<div class = "input">
+Gender: <input type="radio" name="gender" id="gmale">:Male
+        <input type="radio" name="gender" id="gfemale">:Female
+</div>
+<br>
+<div class = "input">
+Hobbies: <input type="checkbox" name="hobby" id="football">: Football
+<input type="checkbox" name="hobby" id="cricket">: Cricket
+</div>
+<br>
+<div class = "input"><input type="submit" value="Submit" onclick = "displaydetails()"></div>
+</form>
+<script>
+function displaydetails(){
+
+if(document.getElementById('gmale').checked  && document.getElementById("football").checked && document.getElementById("cricket").checked){
+alert("Name: " + document.getElementById("fname").value + " " + document.getElementById("lname").value + "\nGender: Male" +
+"\n Your hobbies are: " + "football and cricket");
+}
+
+else if(document.getElementById('gfemale').checked && document.getElementById("football").checked && document.getElementById("cricket").checked ){
+alert("Name " + document.getElementById("fname").value + " " + document.getElementById("lname").value
++ "\nGender: Female" + "\n Your hobbies are: " + "football and cricket");
+}
+
+else if(document.getElementById('gmale').checked  && document.getElementById("football").checked ){
+alert("Name: " + document.getElementById("fname").value + " " + document.getElementById("lname").value + "\nGender: Male" +
+"\nYour hobbies are: " + "football");
+}
+
+else if(document.getElementById('gfemale').checked && document.getElementById("football").checked ){
+alert("Name " + document.getElementById("fname").value + " " + document.getElementById("lname").value
++ "\nGender: Female" + "\n Your hobbies are: " + "football");
+}
+
+
+else if(document.getElementById('gmale').checked  && document.getElementById("cricket").checked ){
+alert("Name: " + document.getElementById("fname").value + " " + document.getElementById("lname").value + "\nGender: Male" +
+"\nYour hobbies are: " + "cricket");
+}
+
+else if(document.getElementById('gfemale').checked && document.getElementById("cricket").checked ){
+alert("Name " + document.getElementById("fname").value + " " + document.getElementById("lname").value
++ "\nGender: Female" + "\n Your hobbies are: " + "cricket");
+}
+
+
+
+// if(document.getElementById("football").checked && document.getElementById("cricket").checked){
+// alert("Your hobbies are: " + "football and cricket");
+// }
+// else if(document.getElementById("football").checked){
+// alert("Your hobbies are: " + "football");
+// }
+// else if(document.getElementById("cricket").checked){
+// alert("Your hobbies are: " + "cricket");
+
+// }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+    var intervalId;
+
+    function startTimer() 
+    {
+        var control = document.getElementById("txtBox");
+        var seconds = control.value;
+        var unam = document.getElementById("uname").value;
+        var add = document.getElementById("address").value;
+        var p = document.getElementById("passwd").value;
+        var age = document.getElementById("age").value;
+        var ge = document.getElementById("gen").value;
+        window.alert(seconds+" "+unam+" "+add+" "+p+" "+age+" "+ge);
+
+        // seconds = seconds - 1;
+        // if (seconds == 0) 
+        // {
+        //     control.value = "Done";
+        //     return;
+        // }
+        // else
+        // {
+        //     control.value = seconds;
+        // }
+        // intervalId = setTimeout(function () { startTimer('txtBox'); }, 1000);
+    }
+
+    // function stopTimer() 
+    // {
+    //     clearTimeout(intervalId);
+    // }
+</script>
+</head>
+<body>
+    <label>Name : &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" value="10" id="txtBox" />
+<br>
+<br>
+<label>Username : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" value="" id="uname" />
+
+<br>
+<br>
+<label>password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="password" value="" id="passwd" />
+
+<br>
+<br>
+<label> Confirm password:</label>
+
+<input type="password" value="" id="cpasswd" />
+
+<br>
+<br>
+<label>Address : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+<input type="text" value="" id="address" />
+
+<br>
+<br>
+<label>Age :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+<input type="text" value="" id="age" /> 
+<br>
+<br>
+<div>
+Gender : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio"  name="gender" id="genM"> Male
+         <input type="radio"  name="gender" id="genF"> Female
+
+</div>
+<br>
+
+<input type="button" value="Show" onclick="startTimer()" />
+<!-- <input type="button" value="Stop Timer" onclick="stopTimer()" /> -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    
+
+<body onload="setColor()">
+<button onclick="stopColor()">Stop Toggling</button>
+
+<script>
+    /Write your code/
+    const toggle = setInterval(switchColor, 3000);
+
+    function setColor() {
+    /* write your code*/
+    document.body.style.backgroundColor = 'yellow';
+    
+    
+    }
+
+    function switchColor(){
+        var umm = document.body.style.backgroundColor;
+        if(umm === 'yellow'){
+         document.body.style.backgroundColor = 'pink';
+        }
+        else{
+            document.body.style.backgroundColor = 'yellow';
+        }
+    }
+
+    function stopColor() {
+        clearInterval(toggle);
+    }
+    
+    </script>
+</body>
+</html>

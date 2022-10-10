@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id="form">
+       <label for="fname"> First name : </label>
+        <input type="text" id="fname"> <br>
+        <label for="lname">Last name : </label>
+        <input type="text" id="lname"><br>
+
+        <span> Gender :</span>
+        <input type="radio" id="male"  name="Gender" value="male">
+        <label for="male" id="mmale">Male</label>
+        
+        <input type="radio" id="female" name="Gender" value="female">
+        <label for="female" id="fmale">Female</label><br>
+
+        <span>Hobbies : </span>
+        <input type="radio" id="cricket" name="hobbies" value="cricket">
+        <label for="cricket">Cricket</label>
+
+        <input type="radio" id="football" name="hobbies" value="football">
+        <label for="football">Football </label><br>
+
+        <button onclick="btn()">button</button>
+
+        <script>
+
+            function btn(){
+               alert(document.getElementById("form"))
+                // document.getElementById("lname");
+                // document.getElementById("mmale");
+                // document.getElementById("fmale");
+            }
+        </script>
+    </form>
+</body>
+</html>

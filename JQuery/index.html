@@ -1,0 +1,86 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("p").click(function(){
+    $(this).hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>Hide Details</p>
+
+<p>If you click me i will disappear.</p>
+<p>I said i will.</p>
+<p><img src="data:image/jpeg;base64,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" alt="not found"></p>
+
+  // <button>Click me</button>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://code.jquery.com/jquery-3.6.1.js"
+integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+<style>
+*{
+font-size: larger;
+}
+</style>
+</head>
+
+<body>
+<p class="intro">Hello! I am Md Rashid Siddique</p>
+<p class="bio" style="background-color: yellow;">if you click any paragraph then intro will hide</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui non tenetur porro quo asperiores itaque sed voluptate deserunt cumque deleniti!</p>
+<br><br><br><br>
+<p>Demostrate fadeIn() with diffrent parameter.</p>
+<button class="button1">Click to fade in Boxes</button>
+<br><br>
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div>
+<br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+<br><br><br>
+<span>hide the color</span>
+<script>
+    $(document).ready(function(){
+        $("p").click(function(){
+            $(".intro").hide();
+        });
+    });
+
+$(document).ready(function(){
+    $("button").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(3000);
+    });
+});
+
+
+
+$(document).ready(function(){
+    $("span").click(function(){
+        $("#div1").hide("slow");
+        $("#div2").hide("slow");
+        $("#div3").hide("slow");
+    });
+});
+   
+</script>
+</body>
+
+</html>

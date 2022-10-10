@@ -1,0 +1,62 @@
+<html><head>
+    <title>Confirm Box</title>
+    <style>
+    /* Write your CSS solution here (do not edit the surrounding HTML) */
+    /* .avatar{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 2px solid gray;
+    } */
+    
+    form{
+    display: grid;
+    justify-content: space-around;
+    }
+    
+    input{
+    width: 200px;
+    height: 30px;
+    
+    }
+    
+    
+    </style>
+    </head><body>
+    <form>
+    <!-- <img class="avatar" src="https://www.kindpng.com/picc/m/78-786207_user-avatar-png-user-avatar-icon-png-transparent.png" alt="avatar" /> -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" />
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" />
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" />
+    <br>
+    <label for="confirm">Confirm:</label>
+    <input type="password" id="confirm" name="confirm" />
+    <br>
+    <input type="submit" value="Submit" />
+    </form>
+    <script>
+    let form = document.querySelector('form');
+    let password = document.getElementById('password');
+    let confirm = document.getElementById('confirm');
+    form.addEventListener('submit', function(e){
+    if(password.value != confirm.value){
+    e.preventDefault();
+    alert('Passwords do not match');
+    }
+
+    else if(password.value == confirm.value){
+    e.preventDefault();
+    alert('Passwords match');
+    }
+
+    });
+    
+    
+    </script>
+    </body>
+    </html>

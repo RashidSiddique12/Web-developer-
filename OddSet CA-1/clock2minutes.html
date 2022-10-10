@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        table {
+            border: thin solid black;
+            border-collapse: collapse;
+            margin: 5px 5px 5px 0px;
+        }
+
+        td {
+            border: thin solid gray;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>H</td>
+            <td>M</td>
+            <td>S</td>
+        </tr>
+        <tr>
+            <td id="h">0</td>
+            <td id="m">0</td>
+            <td id="s">0</td>
+        </tr>
+    </table>
+    <button id="submit" type="submit">Start</button>
+    <script>
+        var h = 0;
+        var m = 0;
+        var s = 0;
+        var submit = document.getElementById("submit");
+        submit.addEventListener("click", function () {
+            var h = document.getElementById("h");
+            var m = document.getElementById("m");
+            var s = document.getElementById("s");
+            var interval = setInterval(function () {
+                s.innerHTML++;
+                if (s.innerHTML == 10) {
+                    s.innerHTML = 0;
+                    m.innerHTML++;
+                }
+                if (m.innerHTML == 2) {
+                    m.innerHTML = 0;
+                    h.innerHTML++;
+                }
+                // if(h.innerHTML == 2){
+
+                // }
+            }, 1000);
+        });
+
+    </script>
+</body>
+
+</html>

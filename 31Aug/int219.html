@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="int219.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <button onclick= myFun()>click Me!</button>
+        <div class="arr">
+            <p id="hmm">150 rupya dega :-)</p>
+        </div>
+    </div>
+    <script>
+        var myArray = ["HelloWorld!","<br>", "My name is Jitender"];
+        let btn = document.getElementsByTagName("button");
+        console.log(btn);
+
+        function myFun(){
+            document.getElementById("hmm").innerHTML = myArray.join('');
+            console.log("Function is called!");
+            document.body.style.backgroundColor = "black";
+            document.getElementsByClassName("arr").style.backgroundColor = "grey"
+
+        }
+
+    </script>
+    
+</body>
+</html>

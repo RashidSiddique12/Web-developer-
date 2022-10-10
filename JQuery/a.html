@@ -1,0 +1,83 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        <img id="img"
+            src="https://images.pexels.com/photos/577514/pexels-photo-577514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="no found" height="100" weight="100">
+    </div>
+</body>
+
+<script src="/jquery js/jquery-3.6.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#img').on({
+            click: function () {
+                $(this).css("height", "420px");
+                $(this).css("width", "500px"); (this).css("width", "500px"); ('#h').text(('#img').height())('#w').text(('#img').width())
+            }
+        });
+        $('#h').text(('#img').height())
+        $('#w').text($('#img').width())
+
+    });
+
+    // $(document).ready(function () {
+    //     $("#div1").html("Height=" + $("#img").height()
+    //         + "<br/>" + "Width = " + $("#img").width())
+    // });
+
+</script>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+<script>
+function myfun(){
+window.reload();
+}
+(document).ready(function(){("p").on({
+mouseenter: function(){
+(this).css("background-color","lightgray"); }, mouseleave: function(){(this).css("background-color","lightblue");
+},
+click: function(){
+(this).css("background-color","yellow"); } }); //code 2 jquery.... //("div").html("Height=" +('#Image1').height() // + "<br/>" + "width=" +('#Image1').width())
+//code 2 jquery
+//code 3 jquery…
+('#Image1').on({ click: function(){(this).css("height","420px");
+(this).css("width","500px");(this).css("width","500px");('#h').text(('#Image1').height())('#w').text(('#Image1').width()) } });('#h').text(('#Image1').height())('#w').text($('#Image1').width())
+//code 3 jquery
+});
+</script>
+
+<link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<!-- <div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi exercitationem praesentium distinctio eligendi dolores autem consequuntur error non dignissimos. Consequatur ut quaerat culpa minima, laborum quam quis alias eius corrupti?</p>
+<button>Click me</button> -->
+<!-- code 2 start here -->
+<br>
+<img src="https://cdn.pixabay.com/photo/2022/02/08/09/28/boats-7001054_1280.jpg" id="Image1" height="220" width="300">
+<!-- code 2 end here -->
+<h3>Height: <span id="h"></span></h3>
+<h3>Width: <span id="w"></span></h3>
+<button onclick="myfun()">refresh</button>
+</div>
+</body>
+</html>
